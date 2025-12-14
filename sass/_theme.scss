@@ -83,6 +83,10 @@ $accent-dark: #959bf0;
     background-color: $tertiary-dark;
   }
 
+  pre {
+    background-color: $tertiary-dark; 
+  }
+  
   pre code {
     background-color: transparent;
   }
