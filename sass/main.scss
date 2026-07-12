@@ -363,6 +363,28 @@ footer {
     font-size: 16px;
 }
 
+footer .donation-banner {
+    text-align: center;
+    margin: 1.5em 0 0.5em;
+    padding-bottom: 1.5em;
+    border-bottom: thin solid #f1f1f1;
+}
+
+footer .donation-banner img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    border-radius: 6px;
+}
+
+footer .donation-banner a {
+    text-decoration: none;
+}
+
+footer .donation-banner p {
+    margin: 0.4em 0 0;
+}
+
 ul.language-select {
     padding-left: 0;
     list-style: none;

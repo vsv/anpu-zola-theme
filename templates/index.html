@@ -50,6 +50,14 @@
             {% endblock content %}
         </main>
         <footer>
+            {% if config.extra.anpu_donation %}
+            <div class="donation-banner">
+                <a href="{{ config.extra.anpu_donation.url }}" target="_blank" rel="noopener">
+                    <img src="{{ get_url(path=config.extra.anpu_donation.image) }}" alt="{{ config.extra.anpu_donation.text }}" loading="lazy">
+                    <p>{{ config.extra.anpu_donation.text }}</p>
+                </a>
+            </div>
+            {% endif %}
             <p>
                 © {{ now() | date(format="%Y") }} {{ config.extra.anpu_author }}<br>
                 Powered by <a target="_blank" href="https://getzola.org/">Zola</a>, Theme <a target="_blank" href="https://github.com/zbrox/anpu-zola-theme">Anpu</a>.
