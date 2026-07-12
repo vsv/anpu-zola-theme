@@ -44,6 +44,13 @@
       cls.toggle("dark-mode", false);
       sessionStorage.setItem("theme", "light");
     });
+  window
+    .matchMedia("(prefers-color-scheme: dark)")
+    .addEventListener("change", function (e) {
+      if (sessionStorage.getItem("theme") === null) {
+        cls.toggle("dark-mode", e.matches);
+      }
+    });
 </script>
 <noscript>
   <style>
